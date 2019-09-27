@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app1:
+    image: nginx
+    volumes: 
+      - ./app1/:/usr/share/nginx/html
+  app2:
+    image: nginx
+    volumes: 
+      - ./app2/:/usr/share/nginx/html
+  app3:
+    image: nginx
+    volumes: 
+      - ./app3/:/usr/share/nginx/html
+  app4:
+    image: nginx
+    volumes: 
+      - ./app4/:/usr/share/nginx/html
+  app5:
+      image: nginx
+      volumes: 
+        - ./app5/:/usr/share/nginx/html
+  proxy:
+   build: 
+     context: ./proxy
+     dockerfile: Dockerfile 
+   ports:
+      - 80:80
+    
