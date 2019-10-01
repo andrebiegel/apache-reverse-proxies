@@ -1,0 +1,12 @@
+== Reserve Proxies with  Apache HTTP
+This Repo examines the features  of mod_proxy_html and mod_subsdtitute in Apache httpd. To start the enviroment just start the compose file.
+
+
+.Optional Title
+[source,bash]
+----
+chmod +x startDefaults.sh 
+./startDefaults.sh
+----
+
+TIP: Chrome resolves localhost subdomains out of the box (firefox does not )
