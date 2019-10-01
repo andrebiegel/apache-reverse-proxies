@@ -1,0 +1,6 @@
+body div.imagerized {
+    height: 150px;
+    width: 50%;
+    background-image: url('/images/image.jpg')
+}
+/* comment */ 

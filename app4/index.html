@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-        <h1>Hello World !! with a well defined resource reference  from example 4</h1>
 
-        <div style="height: 100px; width: 50%;background-image: url('/images/image.jpg')"></div>
-    </body>
+<html>
+
+<head>
+    <link rel="stylesheet"  type="text/css" href="layout/style.css">
+</head>
+
+<body>
+
+    <style>
+    body div.imagerizedInline {
+        height: 100px;
+        width: 50%;
+        background-image: url("/images/image.jpg")
+    }
+    </style>
+
+    <h1>Hello World !! with a well defined resource reference from example 4 test</h1>
+
+
+    <img src="/images/image.jpg" alt="/images/image.jpg">
+
+
+    <div class="imagerized"></div>
+
+
+    <div class="imagerizedInline"></div>
+
+    <div style="height: 100px; width: 50%;background-image: url('/images/image.jpg')"></div>
+</body>
 
 </html>

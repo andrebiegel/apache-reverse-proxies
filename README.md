@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Web Development; Configuration in UI: Experience from an integration perspective"
+title:  "Web Development: Configuration in UI: Experiences from an integration perspective"
 ---
 This lenghty one tries to translate backend guidelines in configuration handling towards frontend development.. feel free to discuss or rant at ... gist url ;-)
 
@@ -13,7 +13,7 @@ But exactly this kind of work can be really messy for operations people, because
  I definitely would like to consider urls in markup languages as configuration. Handling configuration is a pretty old topic in software engineering and requires a concept, which fulfills the requirements the app has. 
 
 The following guidelines exist when i do backend development .. (created by myself)
-* configuration should be decoupled
+* configuration should be decoupled and hold in a defined syntax 
 * hard coding is not an option
 * every configurational item has a default value
 * document the configuration options (operations guide, Component documentation)
