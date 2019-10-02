@@ -10,3 +10,11 @@ chmod +x startDefaults.sh
 ----
 
 TIP: Chrome resolves localhost subdomains out of the box (firefox does not )
+
+
+Lessons I learned: 
+
+* mod-proxy only rewrites headers, nothing else
+* mod_proxy_html only rewrites attributes of tags, which it is configured to do so (https://httpd.apache.org/docs/2.4/mod/mod_proxy_html.html)
+* mod_proxy_html can additional rewrite inline scripts and stylesheets but no inline styles from other tags
+* external scripts & stylesheets can be rewritten with mod substitute
