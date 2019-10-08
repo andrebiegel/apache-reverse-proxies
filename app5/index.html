@@ -12,28 +12,25 @@
   <main>
     <header>
       <h2>Config</h2>
+      <app-config >
+        <app-config-entry key="backendUrl" value="http://foo.localhost" type="String"></app-config-entry>        
+      </app-config>
       <section>
-      <air-crumb>...</air-crumb>
-      <total-view></total-view>
-    </section>
+      
+      </section>
     </header>
     <nav>
-      <air-nav activeLinkClass="a-link">
         <a href="#Overview">overview</a>
         <a href="#Add">add stock</a>
         <a href="#List">list stocks</a>
         <a href="#About">about</a>
-      </air-nav>
-      <air-update>...</air-update>
     </nav>
     <article>
-      <air-slot>
       <img src="images/image.jpg" slot="view"/>
     </air-slot>
     </article>
     <footer>
-      <air-storage></air-storage>
-      <small>copyright airhacks.io 2018</small>
+      <small>foo</small>
     </footer>
   </main>
   <script src="js/app.js" type="module"></script>
