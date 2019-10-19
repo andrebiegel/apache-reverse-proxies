@@ -10,6 +10,7 @@ class AppConfig extends HTMLElement {
         super(); 
         this._shadowRoot = this.attachShadow({ 'mode': 'open' });
         console.log('constructed!');
+        render(this.template(), this._shadowRoot, {eventContext: this});
     }
 
     async connectedCallback() {
@@ -28,6 +29,19 @@ class AppConfig extends HTMLElement {
         console.log('adopted!');
     }
 
+    _removeConfig(e) {
+        this.configs = this.configs.filter((config,index) => {
+            return index !== e.detail;
+        });
+      }
+    set configs(value) {
+        this._configs = value;
+        render(this.template(), this._shadowRoot, {eventContext: this});
+    }
+
+    get configs() {
+        return this._configs;
+    }
     template() {
         return html`
             <style>
